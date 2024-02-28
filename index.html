@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My Profile </title>
     <style>
+        #home {
+            /* border-left-style: dotted;
+            border-width: 5px;
+            border-color: red; */
+            border: 5px solid rgb(231, 8, 8);
+        }
+        
+        #summary {
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* text-align: center;
+            text-decoration: underline; */
+            text-transform: uppercase;
+        }
+        
         #resume {
             color: orange;
             font-weight: bolder;
+            background-color: rgb(156, 157, 158);
         }
         
         .heading {
@@ -19,30 +35,56 @@
         .text {
             color: brown;
             font-weight: bold;
+            background-color: rgb(156, 157, 158);
         }
         
         .remunderline {
             text-decoration-line: none;
+        }
+        
+        .tech {
+            color: cadetblue;
+        }
+        
+        #agile {
+            font-style: italic;
+            font-weight: bold;
+            background-color: rgb(230, 227, 227);
+        }
+        
+        .icon {
+            background-color: rgb(156, 157, 158);
+        }
+        
+        .head {
+            color: brown;
+            background-color: aqua;
+            text-transform: uppercase;
+        }
+        
+        #list {
+            color: firebrick;
+            background-color: slategray;
         }
     </style>
 </head>
 
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-        </svg> &nbsp; <b class="text">Rushikesh Pol</b>&nbsp;&nbsp;&nbsp;&nbsp;
+        </svg> &nbsp; <span class="text"> Rushikesh Pol</span>&nbsp;&nbsp;&nbsp;&nbsp;
 
         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
                 d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-        </svg> &nbsp; <b class="text"> 9423333262</b> &nbsp;&nbsp;&nbsp;&nbsp;
+        </svg> &nbsp; <span class="text">9423333262</span> &nbsp;&nbsp;&nbsp;&nbsp;
 
         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
             <path
                 d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-        </svg> &nbsp; <b class="text">rushikeshpol51@gmail.com</b> &nbsp;&nbsp;&nbsp;&nbsp;
+        </svg> &nbsp;<span class="text">rushikeshpol51@gmail.com</span> &nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
@@ -64,18 +106,23 @@
         <a class="remunderline" href="">OTHERS</a>
     </nav>
 
+    <section>
+        <h2 class="head"> Career Objectives</h2>
+    </section>
+
     <!-- Main Section -->
     <section>
         <!-- Home Section -->
         <section id="home">
-            <h2 class="heading"> <strong> Professional Summery </strong></h2>
+            <h2 id="summary" class="head" class="heading"> <strong> Professional Summery </strong></h2>
             <ul type="square">
-                <li>Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
-                <li>Experience on working with version control system - GIT and GitHub</li>
+                <li>Having 1 years of experience in developing Single page Web Applications using <span class="tech"> <span style="color: coral;"> Angular 8 </span>, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript </span>
+                </li>
+                <li id="list">Experience on working with version control system - GIT and GitHub</li>
                 <li>Experience working with JIRA for user stories and bug tracking</li>
                 <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
                 <li>Working exposure on ID's like VS Code and Notepad++</li>
-                <li>Good working experience under Agile methodologies environment</li>
+                <li>Good working experience under <span id="agile"> Agile methodologies </span>environment</li>
                 <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
                 <li>Knowledge of NodeJS</li>
                 <li>Ability to work with people at all levels in the program</li>
