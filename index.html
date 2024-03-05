@@ -5,46 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My Profile </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <!-- <link rel="stylesheet" href="https://fontawesome.com/v4/icons/"> -->
     <style>
-        header {
-            padding: 20px;
-            background-color: rgb(216, 244, 245);
-        }
-        
-        #resume {
-            color: orange;
-            font-weight: bolder;
-        }
-        
-        .heading {
-            color: cadetblue;
-            font-style: italic;
-            padding: 30px;
-        }
-        
-        .header-info {
-            margin-right: 40px;
-            margin-left: 10px;
-        }
-        
-        #resume-text {
-            margin-left: 10px;
-        }
-        
-        .space {
-            padding: 10px;
-        }
-        
-        .footer {
-            padding: 20px;
-        }
-        
-        .center {
-            text-align: center;
-        }
+
     </style>
 
 
@@ -69,161 +35,178 @@
         <a href="Rushikesh Pol.pdf" download id="resume"> <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span> </a>
 
     </header>
-    <br>
+    <br> <br> <br><br><br>
 
     <!-- Navigation Section -->
     <nav>
-        <a class="remunderline" href="#home"><span class="header-info">HOME</span></a>
-        <a class="remunderline" href="#techStack"><span class="header-info"> TECH STACK</span></a>
-        <a class="remunderline" href="#project"><span class="header-info">PROJECTS</span></a>
-        <a class="remunderline" href="#education"><span class="header-info">EDUCATION</span></a>
-        <a class="remunderline" href="#personal"><span class="header-info"PERSONAL DETAILS></span></a>
-        <a class="remunderline" href="">OTHERS</a>
-    </nav>
-
-    <section>
-        <h2 class="head"> Career Objectives</h2>
-    </section>
-
-    <!-- Main Section -->
-    <section>
-        <!-- Home Section -->
-        <section id="home">
-            <h2 id="summary" class="head"> <strong> Professional Summery </strong></h2>
-            <ul type="square">
-                <li class="space">Having 1 years of experience in developing Single page Web Applications using <span class="tech"> <span style="color: coral;"> Angular 8 </span>, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript </span>
-                </li>
-                <li class="space">Experience on working with version control system - GIT and GitHub</li>
-                <li class="space">Experience working with JIRA for user stories and bug tracking</li>
-                <li class="space">Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
-                <li class="space">Working exposure on ID's like VS Code and Notepad++</li>
-                <li class="space">Good working experience under <span id="agile"> Agile methodologies </span>environment</li>
-                <li class="space">Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
-                <li class="space">Knowledge of NodeJS</li>
-                <li class="space">Ability to work with people at all levels in the program</li>
+        <nav id="navSection">
+            <ul>
+                <li><a href="#home">HOME</a> </li>
+                <li><a href="#techStack">TECH STACK</a> </li>
+                <li><a href="#project">PROJECTS</a></li>
+                <li><a href="#techStack">TECH STACK</a> </li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li class="last"><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+                <!-- <a class="remunderline" href="#home"><span class="header-info">HOME</span></a>
+                 <a class="remunderline" href="#techStack"><span class="header-info"> TECH STACK</span></a>
+                <a class="remunderline" href="#project"><span class="header-info">PROJECTS</span></a>
+                <a class="remunderline" href="#education"><span class="header-info">EDUCATION</span></a>
+                <a class="remunderline" href="#personal"><span class="header-info"PERSONAL DETAILS></span></a>
+                <a class="remunderline" href="">OTHERS</a> -->
             </ul>
-
+        </nav>
+        <br><br>
+        <section>
+            <h2 class="head"> Career Objectives</h2>
         </section>
-        <hr>
-        <!-- Technology Stack Section -->
-        <section id="techStack">
-            <h2 class="heading"> <strong> My Technology Stack </strong> </h2>
-            <table border="1px">
-                <thead>
-                    <th class="space">Sr.No</th>
-                    <th class="space">Technology Stack</th>
-                    <th class="space">Rating</th>
-                </thead>
 
-                <tbody class="center">
-                    <tr>
-                        <td class="space">1</td>
-                        <td class="space">HTML</td>
-                        <td class="space">4</td>
-                    </tr>
-                    <tr>
-                        <td class="space">2</td>
-                        <td class="space">CSS</td>
-                        <td class="space">4</td>
-                    </tr>
-                    <tr>
-                        <td class="space">3</td>
-                        <td class="space">JavaScript</td>
-                        <td class="space">4</td>
-                    </tr>
-                    <tr>
-                        <td class="space">4</td>
-                        <td class="space">Angular</td>
-                        <td class="space">3</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </section>
-        <hr>
-        <!-- Project Section -->
-        <section id="project">
-
-            <h2 class="heading"> <strong> Project Details</strong> </h2>
-            <hr>
-            <p> <strong>Name:  &nbsp;&nbsp;<u>Student Management  </u></strong></p>
-            <p> <strong> <u> Environment: </u> </strong> &nbsp;&nbsp; Angular 8,TypeScript(ES6),HTML,CSS,Bootstrap,GitHub,Desktop GitHub,Agile and JIRA,IDE-VS Code </p>
-            <p> <strong> Team Size: </strong> 06 <strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration:</strong> <i> 2021-1<sup> st </sup> - July till <u> present </u> </i> </p>
-            <p> <strong> Project Description:</strong> This project is mainly used for student Management in colleges,where It helps to manage student record like <br>student registration, student update information and to see all his or her academic activities
-                like score card, attendance. </p>
-            <hr>
-            <p> <strong> Roles and Responsibilities:</strong> <br> <br>
+        <!-- Main Section -->
+        <section>
+            <!-- Home Section -->
+            <section id="home">
+                <h2 id="listSummary" class="head"> <strong> Professional Summery </strong></h2>
                 <ul>
-                    <li class="space"> Designed and implemented the user interface using HTML5 and CSS3 </li> <br>
-                    <li class="space"> Work closely with backend developers for code integration</li> <br>
-                    <li class="space"> Identifying and troubleshooting issues with front end codebase </li> <br>
-                    <li class="space"> Worked in GIT as a version control</li> <br>
-                    <li class="space"> Used JIRA for bug tracking</li> <br>
-                    <li class="space"> implemented project using Agile SCRUM methodology, Involved in daily stand up calls, sprint showcase and sprint retrospective meetings </li> <br>
-                    <li class="space"> Involved in fixing technical issues in production environment</li>
+                    <li class="space">Having 1 years of experience in developing Single page Web Applications using <span class="tech"> <span style="color: coral;"> Angular 8 </span>, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript </span>
+                    </li>
+                    <li class="space">Experience on working with version control system - GIT and GitHub</li>
+                    <li class="space">Experience working with JIRA for user stories and bug tracking</li>
+                    <li class="space">Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
+                    <li class="space">Working exposure on ID's like VS Code and Notepad++</li>
+                    <li class="space">Good working experience under <span id="agile"> Agile methodologies </span>environment</li>
+                    <li class="space">Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
+                    <li class="space">Knowledge of NodeJS</li>
+                    <li class="space">Ability to work with people at all levels in the program</li>
                 </ul>
-            </p>
-        </section>
-        <hr>
-        <!-- Education section -->
-        <section id="education">
-            <h2> <strong> My Educational Details</strong> </h2>
-            <table border="1px">
-                <thead>
-                    <th class="space"> Sr.No. </th>
-                    <th class="space"> Academic </th>
-                    <th class="space"> College Name </th>
-                    <th class="space"> University / Board </th>
-                </thead>
-                <tbody class="center">
-                    <tr>
-                        <td class="space"> 1 </td>
-                        <td class="space"> Graduation </td>
-                        <td class="space"> SVERI's COE Pandharpur </td>
-                        <td class="space"> Solapur </td>
-                    </tr>
-                    <tr>
-                        <td class="space"> 2 </td>
-                        <td class="space"> HSC or 12 <sup> th </sup> </td>
-                        <td class="space"> Shri Gurukul vidyapeeth Rajuri</td>
-                        <td class="space"> Pune </td>
-                    </tr>
-                    <tr>
-                        <td class="space"> 3 </td>
-                        <td class="space"> SSC or 10 <sup> th </sup> </td>
-                        <td class="space"> Ashokrav Krushi Vidyalay , Alegaon </td>
-                        <td class="space"> Pune </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <hr>
-        <!-- Personal Details section -->
-        <section id="personal">
-            <h2> <strong> Profile Photo </strong></h2>
-            <img type="circle" src="id.jpg" width="100" height="100"> <br> Rushikesh Pol
-            <p> <strong> Mobile Number : </strong> 9423333262</p>
-            <p> <strong> Email : </strong> rushikeshpol51@gmail.com</p>
-            <p> <strong> Date Of Birth : </strong> Oct - 09 - 2000 </p>
-            <p> <strong> Address : </strong> A/P Alegaon , Tal : Sangola , Dist : solapur </p>
-            <details>
-                <summary> <strong> Family Details </strong></summary>
-                <ul>
-                    <li> Father Name : Uttam Pol</li>
-                    <li> Mother Name : Shobharani Pol</li>
-                </ul>
-            </details>
-        </section>
 
-        <!-- Footer Section -->
-        <footer>
-            <h2> Follow on us </h2>
-            <i class="fa fa-instagram footer" aria-hidden="true"></i>
-            <i class="fa fa-facebook-official  footer" aria-hidden="true"></i>
-            <i class="fa fa-linkedin-square  footer" aria-hidden="true"></i>
-        </footer>
-    </section>
+            </section>
+            <div id="div">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
 
+            </div>
+            <hr>
+            <!-- Technology Stack Section -->
+            <section id="techStack">
+                <h2 class="heading"> <strong> My Technology Stack </strong> </h2>
+                <table border="1px">
+                    <thead>
+                        <th class="space">Sr.No</th>
+                        <th class="space">Technology Stack</th>
+                        <th class="space">Rating</th>
+                    </thead>
+
+                    <tbody class="center">
+                        <tr>
+                            <td class="space">1</td>
+                            <td class="space">HTML</td>
+                            <td class="space">4</td>
+                        </tr>
+                        <tr>
+                            <td class="space">2</td>
+                            <td class="space">CSS</td>
+                            <td class="space">4</td>
+                        </tr>
+                        <tr>
+                            <td class="space">3</td>
+                            <td class="space">JavaScript</td>
+                            <td class="space">4</td>
+                        </tr>
+                        <tr>
+                            <td class="space">4</td>
+                            <td class="space">Angular</td>
+                            <td class="space">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <hr>
+            <!-- Project Section -->
+            <section id="project">
+
+                <h2 class="heading"> <strong> Project Details</strong> </h2>
+                <hr>
+                <p> <strong>Name:  &nbsp;&nbsp;<u>Student Management  </u></strong></p>
+                <p> <strong> <u> Environment: </u> </strong> &nbsp;&nbsp; Angular 8,TypeScript(ES6),HTML,CSS,Bootstrap,GitHub,Desktop GitHub,Agile and JIRA,IDE-VS Code </p>
+                <p> <strong> Team Size: </strong> 06 <strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration:</strong> <i> 2021-1<sup> st </sup> - July till <u> present </u> </i> </p>
+                <p> <strong> Project Description:</strong> This project is mainly used for student Management in colleges,where It helps to manage student record like <br>student registration, student update information and to see all his or her academic
+                    activities like score card, attendance.
+                </p>
+                <hr>
+                <p> <strong> Roles and Responsibilities:</strong> <br> <br>
+                    <ol class="roles">
+                        <li class="space"> Designed and implemented the user interface using HTML5 and CSS3 </li> <br>
+                        <li class="space"> Work closely with backend developers for code integration</li> <br>
+                        <li class="space"> Identifying and troubleshooting issues with front end codebase </li> <br>
+                        <li class="space"> Worked in GIT as a version control</li> <br>
+                        <li class="space"> Used JIRA for bug tracking</li> <br>
+                        <li class="space"> implemented project using Agile SCRUM methodology, Involved in daily stand up calls, sprint showcase and sprint retrospective meetings </li> <br>
+                        <li class="space"> Involved in fixing technical issues in production environment</li>
+                    </ol>
+                </p>
+            </section>
+            <hr>
+            <!-- Education section -->
+            <section id="education">
+                <h2> <strong> My Educational Details</strong> </h2>
+                <table border="1px">
+                    <thead>
+                        <th class="space"> Sr.No. </th>
+                        <th class="space"> Academic </th>
+                        <th class="space"> College Name </th>
+                        <th class="space"> University / Board </th>
+                    </thead>
+                    <tbody class="center">
+                        <tr>
+                            <td class="space"> 1 </td>
+                            <td class="space"> Graduation </td>
+                            <td class="space"> SVERI's COE Pandharpur </td>
+                            <td class="space"> Solapur </td>
+                        </tr>
+                        <tr>
+                            <td class="space"> 2 </td>
+                            <td class="space"> HSC or 12 <sup> th </sup> </td>
+                            <td class="space"> Shri Gurukul vidyapeeth Rajuri</td>
+                            <td class="space"> Pune </td>
+                        </tr>
+                        <tr>
+                            <td class="space"> 3 </td>
+                            <td class="space"> SSC or 10 <sup> th </sup> </td>
+                            <td class="space"> Ashokrav Krushi Vidyalay , Alegaon </td>
+                            <td class="space"> Pune </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <!-- Personal Details section -->
+            <section id="personal">
+                <h2> <strong> Profile Photo </strong></h2>
+                <img type="circle" src="id.jpg" width="100" height="100"> <br> Rushikesh Pol
+                <p> <strong> Mobile Number : </strong> 9423333262</p>
+                <p> <strong> Email : </strong> rushikeshpol51@gmail.com</p>
+                <p> <strong> Date Of Birth : </strong> Oct - 09 - 2000 </p>
+                <p> <strong> Address : </strong> A/P Alegaon , Tal : Sangola , Dist : solapur </p>
+                <details>
+                    <summary> <strong> Family Details </strong></summary>
+                    <ul>
+                        <li> Father Name : Uttam Pol</li>
+                        <li> Mother Name : Shobharani Pol</li>
+                    </ul>
+                </details>
+            </section>
+
+            <!-- Footer Section -->
+            <footer>
+                <h2> Follow on us </h2>
+                <i class="fa fa-instagram footer" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official  footer" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square  footer" aria-hidden="true"></i>
+            </footer>
+        </section>
+    </nav>
 
 
 </body>

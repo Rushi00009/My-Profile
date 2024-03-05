@@ -11,15 +11,18 @@
     <title>CSS Box Model</title>
 
     <style>
-        p {
-            border: 2px solid cadetblue;
+    p {
+            border: 5px solid cadetblue;
         }
         
         #summary {
             font-size: larger;
-            padding-left: 30px;
+            /* padding-left: 30px; */
             /* margin: 30px; */
-            margin: 20px 50px;
+            /* margin: 20px 50px; */
+            padding: 30px;
+            width: 200px;
+            box-sizing: content-box;
         }
         
         #project {
@@ -31,15 +34,42 @@
             padding-bottom: 40px;
 
             padding-left: 40px; */
-            padding: 40px 10px;
+            /* padding:40px 10px;    */
+            padding: 30px;
+            width: 200px;
+            box-sizing: border-box;
         }
+        /* p {
+            border: 2px solid cadetblue;
+        }
+        
+        #summary {
+            font-size: larger;
+            padding-left: 30px;
+            /* margin: 30px; */
+        
+        margin: 20px 50px;
+    }
+    #project {
+        font-size: larger;
+        /* padding-top: 40px;
+
+            padding-right: 40px;
+
+            padding-bottom: 40px;
+
+            padding-left: 40px; */
+        
+        padding: 40px 10px;
+        */
+    }
+    summer
     </style>
 
 </head>
 
 <body>
-
-    <p id="summary">Professional Summary</p>
+    <p id="summary">Project Section</p>
 
     <p id="project">Project Section</p>
 
